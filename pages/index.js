@@ -20,7 +20,7 @@ export default function Home() {
         <div className={styles.description}>
           <div>
             <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://www.facebook.com/doctorservicebd"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -56,22 +56,14 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <Link
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
+          <Link href={'./doctors'} className={styles.card}>
             <h2 className={inter.className}>
               Doctors <span>-&gt;</span>
             </h2>
             <p className={inter.className}>Find Best Professionals.</p>
           </Link>
 
-          <Link
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
+          <Link href={'./hospitals'} className={styles.card}>
             <h2 className={inter.className}>
               Hospitals & Diagnostics <span>-&gt;</span>
             </h2>
@@ -80,22 +72,14 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
+          <Link href={'./about'} className={styles.card}>
             <h2 className={inter.className}>
               About Us <span>-&gt;</span>
             </h2>
             <p className={inter.className}>We Care About Your Health.</p>
           </Link>
 
-          <Link
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
+          <Link href={'./contact'} className={styles.card}>
             <h2 className={inter.className}>
               Contact Us <span>-&gt;</span>
             </h2>
