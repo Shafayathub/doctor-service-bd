@@ -22,16 +22,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-slate-900">
-        <div className="z-10">
+        <div className="z-10 flex flex-wrap items-center justify-evenly p-5 text-orange-400">
           <Image
-            className="w-48 md:w-72 mx-auto"
+            className="w-48 md:w-72"
             src={logo}
             alt="Doctor Service BD Logo"
             priority
           />
+          <h4>Mobile: +8801718053201</h4>
+          <h4>Email: shafayat.ms@gmail.com</h4>
         </div>
 
-        <Carousel autoPlay infiniteLoop className="">
+        <Carousel autoPlay infiniteLoop>
           <div>
             <Image src={banner1} alt="banner" />
           </div>
@@ -57,7 +59,7 @@ export default function Home() {
             href={'./hospitals'}
             className="border border-orange-400 rounded-xl text-orange-400  hover:shadow-2xl hover:text-orange-300 p-2">
             <h2 className="font-semibold text-2xl">
-              Hospitals & Diagnostics <span>-&gt;</span>
+              Diagnostics <span>-&gt;</span>
             </h2>
             <p className="text-xs">Find Best Health Care Centers For You.</p>
           </Link>
@@ -79,6 +81,29 @@ export default function Home() {
             </h2>
             <p className="text-xs">We are here for you 24/7.</p>
           </Link>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <iframe
+            className="mx-auto pb-10 w-80"
+            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe
+            className="mx-auto pb-10 w-80"
+            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe
+            className="mx-auto pb-10 w-80"
+            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </main>
     </>

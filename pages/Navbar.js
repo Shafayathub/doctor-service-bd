@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import auth from './firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [user] = useAuthState(auth);
   return (
     <>
       <div className="text-xl text-center p-1 bg-slate-800 text-orange-400 relative">
@@ -32,6 +36,22 @@ const Navbar = () => {
           <li className="hover:text-white">
             <Link href={'./contact'}>Contact</Link>
           </li>
+          {user && (
+            <Link className="mr-5 hover:text-gray-900" href={'/manageservice'}>
+              Manage
+            </Link>
+          )}
+
+          {user?.uid && (
+            <li>
+              <Link
+                className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 text-orange-500"
+                onClick={() => signOut(auth)}
+                href={'/'}>
+                Sign Out
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
       <hr />
