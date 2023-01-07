@@ -21,23 +21,25 @@ const Navbar = () => {
           className={`md:flex items-center justify-center space-x-5 mt-5 ${
             open ? 'block' : 'hidden'
           }`}>
-          <li className="hover:text-white ml-5">
+          <li className="hover:text-white hover:bg-orange-500 hover:rounded-lg hover:p-1 ml-5">
             <Link href={'/'}>Home</Link>
           </li>
-          <li className="hover:text-white">
+          <li className="hover:text-white  hover:bg-orange-500 hover:rounded-lg hover:p-1">
             <Link href={'/doctors'}>Doctors</Link>
           </li>
-          <li className="hover:text-white">
+          <li className="hover:text-white hover:bg-orange-500 hover:rounded-lg hover:p-1">
             <Link href={'./hospitals'}>Diagnostics</Link>
           </li>
-          <li className="hover:text-white">
+          <li className="hover:text-white hover:bg-orange-500 hover:rounded-lg hover:p-1">
             <Link href={'./about'}>About</Link>
           </li>
-          <li className="hover:text-white">
+          <li className="hover:text-white hover:bg-orange-500 hover:rounded-lg hover:p-1">
             <Link href={'./contact'}>Contact</Link>
           </li>
           {user && (
-            <Link className="mr-5 hover:text-gray-900" href={'/manageservice'}>
+            <Link
+              className="mr-5 hover:text-white hover:bg-orange-500 hover:rounded-lg hover:p-1"
+              href={'/manageservice'}>
               Manage
             </Link>
           )}

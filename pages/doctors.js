@@ -23,7 +23,7 @@ const Doctors = () => {
         <div className="p-3">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
             {doctors.map((doctor) => (
-              <Doctor key={doctor.id} doctor={doctor}></Doctor>
+              <Doctor key={doctor._id} doctor={doctor}></Doctor>
             ))}
           </div>
         </div>

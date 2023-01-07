@@ -29,8 +29,8 @@ export default function Home() {
             alt="Doctor Service BD Logo"
             priority
           />
-          <h4>Mobile: +8801718053201</h4>
-          <h4>Email: shafayat.ms@gmail.com</h4>
+          <h4>Mobile: +880171xxxxxxx</h4>
+          <h4>Email: example@gmail.com</h4>
         </div>
 
         <Carousel autoPlay infiniteLoop>
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-4 gap-5 text-center z-10 pb-20 pl-10 pr-10">
           <Link
             href={'./doctors'}
-            className="border border-orange-400 rounded-xl text-orange-400  hover:shadow-2xl hover:text-orange-300 p-2">
+            className="border border-orange-400 rounded-xl text-orange-400  hover:bg-orange-500 hover:text-white p-2">
             <h2 className="font-semibold text-2xl">
               Doctors <span>-&gt;</span>
             </h2>
@@ -57,7 +57,7 @@ export default function Home() {
 
           <Link
             href={'./hospitals'}
-            className="border border-orange-400 rounded-xl text-orange-400  hover:shadow-2xl hover:text-orange-300 p-2">
+            className="border border-orange-400 rounded-xl text-orange-400  hover:bg-orange-500 hover:text-white p-2">
             <h2 className="font-semibold text-2xl">
               Diagnostics <span>-&gt;</span>
             </h2>
@@ -66,7 +66,7 @@ export default function Home() {
 
           <Link
             href={'./about'}
-            className="border border-orange-400 rounded-xl text-orange-400  hover:shadow-2xl hover:text-orange-300 p-2">
+            className="border border-orange-400 rounded-xl text-orange-400  hover:bg-orange-500 hover:text-white p-2">
             <h2 className="font-semibold text-2xl">
               About Us <span>-&gt;</span>
             </h2>
@@ -75,7 +75,7 @@ export default function Home() {
 
           <Link
             href={'./contact'}
-            className="border border-orange-400 rounded-xl text-orange-400  hover:shadow-2xl hover:text-orange-300 p-2">
+            className="border border-orange-400 rounded-xl text-orange-400  hover:bg-orange-500 hover:text-white p-2">
             <h2 className="font-semibold text-2xl">
               Contact Us <span>-&gt;</span>
             </h2>
@@ -85,21 +85,21 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
           <iframe
             className="mx-auto pb-10 w-80"
-            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            src="https://www.youtube.com/embed/oCNZVy5Njms"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <iframe
             className="mx-auto pb-10 w-80"
-            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            src="https://www.youtube.com/embed/ieme9Kv2poQ"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <iframe
             className="mx-auto pb-10 w-80"
-            src="https://www.youtube.com/embed/p02_Cb7JdF0"
+            src="https://www.youtube.com/embed/hUHCadgWZO8"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
