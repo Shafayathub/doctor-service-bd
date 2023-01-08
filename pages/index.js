@@ -16,7 +16,10 @@ export default function Home() {
     <>
       <Head>
         <title>Doctor Service BD</title>
-        <meta name="description" content="Doctor Service BD" />
+        <meta
+          name="description"
+          content="DOCTOR SERVICE BD We are committed to Health Care. Welcome to you our Doctor Service BD website to take the services and serial of all expert and experienced doctors in Rajshahi."
+        />
         <meta name="keyword" content="Doctor Service BD" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -29,8 +32,8 @@ export default function Home() {
             alt="Doctor Service BD Logo"
             priority
           />
-          <h4>Mobile: +880171xxxxxxx</h4>
-          <h4>Email: example@gmail.com</h4>
+          <h4>Mobile: +8801723-025514</h4>
+          <h4>Email: moneir169@gmail.com</h4>
         </div>
 
         <Carousel autoPlay infiniteLoop>
@@ -56,7 +59,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={'./hospitals'}
+            href={'./diagnostics'}
             className="border border-orange-400 rounded-xl text-orange-400  hover:bg-orange-500 hover:text-white p-2">
             <h2 className="font-semibold text-2xl">
               Diagnostics <span>-&gt;</span>

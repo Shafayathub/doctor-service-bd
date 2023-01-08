@@ -10,7 +10,7 @@ const AddDoctor = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = '';
+    const url = 'http://localhost:5000/doctor';
     fetch(url, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
@@ -36,12 +36,12 @@ const AddDoctor = () => {
         <input
           className="bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           placeholder="Catagory/Field of Practice"
-          {...register('name', { required: true, maxLength: 20 })}
+          {...register('catagory', { required: true, maxLength: 20 })}
         />
         <input
           className="bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           placeholder="Gender:Male/Female"
-          {...register('name', { required: true, maxLength: 20 })}
+          {...register('gender', { required: true, maxLength: 20 })}
         />
         <input
           className="bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -51,13 +51,13 @@ const AddDoctor = () => {
         <input
           className="bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           placeholder="Video URL"
-          {...register('img', { required: true })}
+          {...register('video', { required: true })}
         />
 
         <textarea
           className=" bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           placeholder="Description"
-          {...register('description', { required: true, maxLength: 250 })}
+          {...register('about', { required: true, maxLength: 250 })}
         />
 
         {/* errors will return when field validation fails  */}
