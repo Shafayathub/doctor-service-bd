@@ -10,7 +10,8 @@ const AddDiagnostic = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = 'http://localhost:5000/diagnostic';
+    const url =
+      'https://doctor-service-bd-server-production.up.railway.app/diagnostic';
     fetch(url, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
@@ -18,6 +19,7 @@ const AddDiagnostic = () => {
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
+    event.target.reset();
   };
   return (
     <div className="m-5 p-5">

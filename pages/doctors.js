@@ -5,7 +5,7 @@ import Doctor from './Doctor';
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/doctor')
+    fetch('https://doctor-service-bd-server-production.up.railway.app/doctor')
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);

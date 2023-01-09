@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 const DeleteDoctor = () => {
   const [doctors, setdoctors] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/doctor')
+    fetch('https://doctor-service-bd-server-production.up.railway.app/doctor')
       .then((res) => res.json())
       .then((data) => setdoctors(data));
   }, []);
   const handleDelete = (id) => {
     const proceed = window.confirm('Are you sure?');
     if (proceed) {
-      const url = `http://localhost:5000/doctor/${id}`;
+      const url = `https://doctor-service-bd-server-production.up.railway.app/doctor/${id}`;
       fetch(url, {
         method: 'DELETE',
       })
