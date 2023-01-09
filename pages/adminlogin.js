@@ -4,7 +4,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from 'react-firebase-hooks/auth';
-import auth from '../pages/firebase.init';
+import auth from './firebase.init';
 
 import login from '../pages/images/admin-login.gif';
 
