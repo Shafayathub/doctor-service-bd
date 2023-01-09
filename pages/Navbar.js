@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
-import auth from './firebase.init';
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
+import auth from '../firebase.init';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

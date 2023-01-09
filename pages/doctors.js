@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
-import Doctor from './Doctor';
+import Doctor from './doctor';
 
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
