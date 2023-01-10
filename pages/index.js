@@ -8,6 +8,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import banner1 from './images/banner/banner1.jpg';
 import banner2 from './images/banner/banner2.jpg';
 import banner3 from './images/banner/banner3.jpg';
+import Social from './Social';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -108,6 +109,7 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
+        <Social></Social>
       </main>
     </>
   );

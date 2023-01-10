@@ -3,7 +3,7 @@ import React from 'react';
 
 const Diagnostic = ({ diagnostic }) => {
   return (
-    <div className="border border-orange-400 rounded-lg hover:text-white hover:bg-orange-500 p-3">
+    <div className="border border-orange-400 rounded-lg text-green-400 hover:text-white hover:bg-orange-500 p-3">
       <div className="">
         <Image
           className="w-full rounded-lg"
@@ -13,14 +13,20 @@ const Diagnostic = ({ diagnostic }) => {
           alt="Doctor Service BD"
         />
 
-        <h3 className="text-xl font-semibold">Name: {diagnostic?.name}</h3>
-        <h3 className="text-xl font-semibold">Phone: {diagnostic?.phone}</h3>
         <h3 className="text-xl font-semibold">
-          Address: {diagnostic?.address}
+          <span className="text-sm">Name:</span> {diagnostic?.name}
+        </h3>
+        <h3 className="text-xl font-semibold">
+          <span className="text-sm">Phone:</span> {diagnostic?.phone}
+        </h3>
+        <h3 className="text-xl font-semibold">
+          <span className="text-sm">Address:</span> {diagnostic?.address}
         </h3>
       </div>
 
-      <p className="my-2">about:{diagnostic?.about}</p>
+      <p className="my-2 text-xl font-semibold">
+        <span className="text-sm">about:</span> {diagnostic?.about}
+      </p>
     </div>
   );
 };

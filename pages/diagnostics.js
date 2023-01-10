@@ -21,7 +21,9 @@ const Diagnostics = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-slate-900 p-5">
-        <h2 className="text-center text-3xl font-semibold">diagnostics Page</h2>
+        <h2 className="text-center text-3xl font-semibold text-green-400">
+          diagnostics Page
+        </h2>
         <div className="p-3">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
             {diagnostics.map((diagnostic) => (

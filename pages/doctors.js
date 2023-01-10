@@ -19,7 +19,9 @@ const Doctors = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-slate-900 p-5">
-        <h2 className="text-center text-3xl font-semibold">Doctors Page</h2>
+        <h2 className="text-center text-3xl font-semibold text-green-400">
+          Doctors Page
+        </h2>
         <div className="p-3">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
             {doctors.map((doctor) => (
